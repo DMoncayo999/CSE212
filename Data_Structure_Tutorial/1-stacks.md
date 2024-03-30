@@ -1,4 +1,4 @@
-## Stacks 
+# Stacks 
 
 <div style="margin-top: 20px; margin-bottom: 20px;">
   <img src="stackOfBooks.jpg" alt="Stack of Books" width="300">
@@ -9,7 +9,7 @@ A stack is a data structure that follows the **Last-In-First-Out (LIFO)** princi
 
 Stacks are commonly used in programming for managing function calls, undo operations, and parsing expressions.
 
-### Stack Operations
+## Stack Operations
 
 #### Push Operation
 - The push operation adds an element to the top of the stack. Syntax: `push(item)`
@@ -34,33 +34,33 @@ Here's an example of implementing a stack in Python using the built-in list data
 class Stack:
     # Constructor to initialize an empty stack
     def __init__(self):
-        self.items = []  # Initialize an empty list to store stack elements
+        self.items = []  
 
     # Method to push (add) an item onto the top of the stack
     def push(self, item):
-        self.items.append(item)  # Append the item to the end of the list (top of the stack)
+        self.items.append(item) 
 
     # Method to pop (remove and return) the top item from the stack
     def pop(self):
-        if not self.is_empty():  # Check if the stack is not empty
-            return self.items.pop()  # Remove and return the last item from the list (top of the stack)
+        if not self.is_empty():  
+            return self.items.pop()  
         else:
-            raise IndexError("pop from empty stack")  # Raise an IndexError if pop is called on an empty stack
+            raise IndexError("pop from empty stack")  
 
     # Method to peek (return) the top item from the stack without removing it
     def peek(self):
-        if not self.is_empty():  # Check if the stack is not empty
-            return self.items[-1]  # Return the last item from the list (top of the stack)
+        if not self.is_empty():  
+            return self.items[-1]  
         else:
-            return None  # Return None if the stack is empty
+            return None 
 
     # Method to check if the stack is empty
     def is_empty(self):
-        return len(self.items) == 0  # Return True if the list (stack) is empty, False otherwise
+        return len(self.items) == 0  
 
     # Method to return the number of items in the stack
     def size(self):
-        return len(self.items)  # Return the length of the list (number of items in the stack)
+        return len(self.items)  
 
 # Example usage
 stack = Stack()
@@ -70,11 +70,12 @@ stack.push(3)
 print(stack.pop())  # Output: 3
 print(stack.peek())  # Output: 2
 print(stack.size())  # Output: 2
+
 ```
 
 
 
-### "Undo" Option
+## "Undo" Option
 
 One of the practical applications of stacks is implementing the "undo" functionality in applications. 
 
@@ -117,42 +118,37 @@ editor.delete_last_character()
 print(editor.content)  # Output: Hello, world
 editor.undo()
 print(editor.content)  # Output: Hello, world!
+
 ```
 
-
-
-### Diagrams and Tables
+## Diagrams and Tables
 
 This table illustrates the operations and performance of stacks. 
 
-| Stack Operation | Description                                     |
-|-----------------|-------------------------------------------------|
-| push(item)      | Adds an item to the top of the stack            |
-| pop()           | Removes and returns the top item from the stack |
-| peek()          | Returns the top item without removing it        |
-| is_empty()      | Checks if the stack is empty                    |
-| size()          | Returns the number of items in the stack        |
+This table illustrates the operations, descriptions, and performance of stacks using Big O notation.
 
+| Stack Operation | Description                                     | Performance (Big O) |
+|-----------------|-------------------------------------------------|---------------------|
+| push(item)      | Adds an item to the top of the stack            | O(1)                |
+| pop()           | Removes and returns the top item from the stack | O(1)                |
+| peek()          | Returns the top item without removing it        | O(1)                |
+| is_empty()      | Checks if the stack is empty                    | O(1)                |
+| size()          | Returns the number of items in the stack        | O(1)                |
+
+
+The "Performance (Big O)" column provides information about the time complexity of each stack operation in terms of Big O notation. The performance is stated as O(1) for each operation, indicating constant time complexity, which means that these operations generally execute in the same amount of time regardless of the size of the stack.
 
 Table 1: Description of Stack Operations
 
 
-<div style="display:flex; margin-bottom:10px;">
-    <img src="fig_1.png" alt="Figure 1" style="width:30%;margin-right:5px;">
-    <img src="fig_2.png" alt="Figure 2" style="width:30%;margin-right:5px;">
-    <img src="fig_3.png" alt="Figure 3" style="width:30%;">
+
+<div style="margin-top: 50px; margin-bottom: 20px;">
+  <img src="f_1.png" alt="Stack of Books" width="400">
 </div>
 
-Fig.1,2,3: Demostrate Stack push operation
-<div style="display:flex;">
-    <img src="fig_4.png" alt="Figure 1" style="width:30%;margin-right:5px;">
-    <img src="fig_5.png" alt="Figure 2" style="width:30%;margin-right:5px;">
-    <img src="fig_6.png" alt="Figure 3" style="width:30%;">
-</div>
+Fig.1: Demostrate Stack pop and push operations
 
-Fig.4,5,6: Demostrate Stack pop operation
-
-### Problem to Solve
+## Problem to Solve
 
 Write a Python function to reverse a string using a stack. Implement the function `reverse_string(string)` that takes a string as input and returns the reversed string using a stack data structure.
 
@@ -166,7 +162,7 @@ Input: "stacks"
 Output: "skcats"
 
 
-### Problem Solution
+## Problem Solution
 You can check your code with the solution here: [Solution](reverse_string.py)
 
 
