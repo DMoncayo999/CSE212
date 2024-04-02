@@ -1,11 +1,11 @@
 # Stacks 
 
 <div style="margin-top: 20px; margin-bottom: 20px;">
-  <img src="stackOfBooks.jpg" alt="Stack of Books" width="300">
+  <img src="stackOfBooks.jpg" alt="Stack of Books" width="350">
 </div>
 
-
-A stack is a data structure that follows the **Last-In-First-Out (LIFO)** principle, where the last element added to the stack is the first one to be removed. 
+## Introduction
+A Stack is a data structure that follows the **Last-In-First-Out (LIFO)** principle, where the last element added to the stack is the first one to be removed. 
 
 Stacks are commonly used in programming for managing function calls, undo operations, and parsing expressions.
 
@@ -72,8 +72,6 @@ print(stack.peek())  # Output: 2
 print(stack.size())  # Output: 2
 
 ```
-
-
 
 ## "Undo" Option
 
@@ -143,10 +141,10 @@ Table 1: Description of Stack Operations
 
 
 <div style="margin-top: 50px; margin-bottom: 20px;">
-  <img src="f_1.png" alt="Stack of Books" width="400">
+  <img src="fg1_stacks.png" alt="Stack of Books" width="400">
 </div>
 
-Fig.1: Demostrate Stack pop and push operations
+Fig.1: Demostration Stack pop and push operations
 
 ## Problem to Solve
 
@@ -154,16 +152,13 @@ Write a Python function to reverse a string using a stack. Implement the functio
 
 For example:
 
-Input: "hello"
-Output: "olleh"
-Input: "python"
-Output: "nohtyp"
-Input: "stacks"
-Output: "skcats"
+Input: "hello";  Output: "olleh"
+Input: "python"; Output: "nohtyp"
+Input: "stacks"; Output: "skcats"
 
 
 ## Problem Solution
-You can check your code with the solution here: [Solution](reverse_string.py)
+You can check your code with the solution here: [Solution](stack_solution_problem.py)
 
 
 

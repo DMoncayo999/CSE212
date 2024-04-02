@@ -7,8 +7,8 @@ Welcome to this tutorial on data structures in Python. This tutorial aims to rem
 Throughout this tutorial, we'll cover the following data structures:
 
 - [Stacks](1-stacks.md): Stacks and their operations.
-- [Sets](2-sets.md): Explore sets and their unique properties.
-- [Trees](3-trees.md): Understand trees and their applications.
+- [Sets](2-sets.md): Explore Sets and their unique properties.
+- [Trees](3-trees.md): Understand Trees and their applications.
 
 Each module will provide detailed explanations, examples, and exercises. At the end of each module, you'll find a problem to solve independently. It's recommended to attempt solving the problem before checking the provided solution.
 
